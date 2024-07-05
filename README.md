@@ -16,18 +16,19 @@ The project is structured into several key components:
 - **Controller Layer**: The `WeatherController` handles incoming HTTP requests and delegates business logic to the `WeatherService`.
 - **Service Layer**: The `WeatherService` interacts with the OpenWeatherMap API to fetch weather data based on provided coordinates.
 - **Testing Strategy**: Unit tests are implemented using JUnit and Mockito to ensure the correctness of endpoint behavior and service interactions.
-```weatherAppChallenge/
+```
+weatherAppChallenge/
 ├── src/
 │   ├── main/
 │   │   ├── java/
 │   │   │   └── com/
 │   │   │       └── example/
 │   │   │           └── WeatherApp/
-│   │   │               ├── controller/
-│   │   │               │   └── WeatherController.java
-│   │   │               ├── service/
-│   │   │               │   └── WeatherService.java
-│   │   │               └── WeatherAppApplication.java
+│   │   │               ├── GlobalExceptionHandler.java
+│   │   │               ├── LocationNotFoundException.java
+│   │   │               ├── WeatherAppApplication.java
+│   │   │               ├── WeatherController.java
+│   │   │               └── WeatherService.java
 │   │   └── resources/
 │   │       └── application.properties
 │   └── test/
@@ -36,7 +37,16 @@ The project is structured into several key components:
 │               └── example/
 │                   └── WeatherApp/
 │                       └── WeatherControllerTest.java
-└── pom.xml
+├── .mvn/
+│   └── wrapper/
+│       ├── maven-wrapper.jar
+│       ├── maven-wrapper.properties
+│       └── MavenWrapperDownloader.java
+├── mvnw
+├── mvnw.cmd
+├── pom.xml
+└── README.md
+
 ```
 
 
