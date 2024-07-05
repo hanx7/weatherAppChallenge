@@ -76,7 +76,7 @@ weatherAppChallenge/
 
 3. **Run the Application**:
     ```bash
-    ./mvnw spring-boot:run
+     mvn spring-boot:run
     ```
 
 ## Example `application.properties`
@@ -94,7 +94,7 @@ weather.api.key=b73e58bb600488b1ffc0ebb7ecb0b93f
     To run the unit tests for the application, use the following command:
 
     ```bash
-    ./mvnw test
+     mvn test
     ```
 
     This command runs all the unit tests defined in the project.
