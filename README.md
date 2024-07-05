@@ -13,9 +13,15 @@ WeatherApp is a Java Spring Boot application that could retrieves weather inform
 
 The project is structured into several key components:
 
+
+- **Main Source (`src/main/java/com/example/WeatherApp/`)**:
+  - **`GlobalExceptionHandler.java`**: Handles exceptions globally for the application, ensuring consistent error handling across different components.
+  - **`LocationNotFoundException.java`**: Custom exception class used when a specified location is not found during weather data retrieval.
+
 - **Controller Layer**: The `WeatherController` handles incoming HTTP requests and delegates business logic to the `WeatherService`.
 - **Service Layer**: The `WeatherService` interacts with the OpenWeatherMap API to fetch weather data based on provided coordinates.
 - **Testing Strategy**: Unit tests are implemented using JUnit and Mockito to ensure the correctness of endpoint behavior and service interactions.
+
 ```
 weatherAppChallenge/
 ├── src/
